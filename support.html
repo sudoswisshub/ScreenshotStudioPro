@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Center — Screenshot Studio Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="badge">Helpdesk</div>
+            <h1>Support Center</h1>
+            <p class="last-updated">Help with designing and exporting your App Store screenshots.</p>
+        </header>
+
+        <main>
+            <p>Screenshot Studio Pro turns raw app screenshots into finished App Store artwork: drop a capture in, put it in a device frame on a styled background, add a headline, and export at the exact pixel sizes App Store Connect expects.</p>
+
+            <h2>Getting Started</h2>
+            <ul>
+                <li><strong>Add your captures.</strong> Drag screenshots onto the canvas, or use Add Screenshot. Dropping several at once creates one screen per image and picks the matching device automatically.</li>
+                <li><strong>Pick a look.</strong> Choose a template or gradient in the inspector, then adjust the background, headline, and device placement. "Match Colors to Screenshot" pulls a palette out of your own artwork.</li>
+                <li><strong>Check before you upload.</strong> The preflight button flags low text contrast, headlines that are too long, screens with no image, and sets that exceed Apple's ten-screenshot limit.</li>
+                <li><strong>Export.</strong> Choose Folders or fastlane layout, then Export All. Files are named and sized for direct upload.</li>
+            </ul>
+
+            <h2>Troubleshooting</h2>
+            <ul>
+                <li><strong>Export fails, or the default folder stops working.</strong> macOS grants the app access to the folder you pick. If the folder was moved, renamed, deleted, or lives on a drive that is no longer connected, that access no longer resolves and the app will ask you to choose a folder again. To set a new default, open Settings → Defaults &amp; Files → Export Destination Folder.</li>
+                <li><strong>My screenshot looks cropped or stretched inside the frame.</strong> The capture's shape does not match the device you selected. Either switch the device in the inspector, or use the screenshot zoom and offset controls to reframe it inside the screen. Preflight warns when a capture is more than 12% away from the device's aspect ratio.</li>
+                <li><strong>Where did my exported dark-mode images go?</strong> Dark variants are only exported for screens that actually have a dark screenshot assigned. In Folders layout they go into <code>Light</code> and <code>Dark</code> subfolders. In fastlane layout they stay in the locale folder with a <code>_dark</code> suffix, so the structure stays valid for <code>fastlane deliver</code>.</li>
+                <li><strong>Translations.</strong> "Copy Base Texts Into…" fills empty fields with your base-language wording so you can see the layout — it does not translate. For real translations, use Export Texts for Translation… to get a CSV, have it translated, then Import Translated Texts…. You can also import an Xcode String Catalog.</li>
+                <li><strong>Moving a project to another Mac.</strong> Use Save Project…. The saved file embeds every image the project uses, so it opens complete on the other machine. Opening a project replaces whatever you currently have open, so save first if you want to keep it.</li>
+                <li><strong>Undo.</strong> Command-Z steps back through your design changes. The app also saves your work automatically every few seconds.</li>
+            </ul>
+
+            <h2>Feature Requests &amp; Feedback</h2>
+            <p>Have an idea for a device size, template, or export option you need? Email a short description of what you are trying to produce and it will be considered for a future update.</p>
+
+            <h2>Response Times</h2>
+            <p>Support is handled by email, usually within 24–48 hours on business days.</p>
+
+            <div class="contact-card">
+                <div class="contact-info">
+                    <h3>Need direct assistance?</h3>
+                    <p>Get in touch at alice.turcanu91@gmail.com and you'll get a reply as soon as possible.</p>
+                </div>
+                <a href="mailto:alice.turcanu91@gmail.com" class="btn-contact" style="border: none;">Email Support</a>
+            </div>
+        </main>
+    </div>
+    <footer>
+        &copy; 2026 Screenshot Studio Pro. All rights reserved.
+    </footer>
+</body>
+</html>
