@@ -11,11 +11,11 @@
         <header>
             <div class="badge">Privacy</div>
             <h1>Privacy Policy</h1>
-            <p class="last-updated">Last updated: August 8, 2026</p>
+            <p class="last-updated">Last updated: October 7, 2026</p>
         </header>
 
         <main>
-            <p>Screenshot Studio Pro is a Mac app for designing App Store screenshots. It runs entirely on your Mac. <strong>It collects no personal information, contains no analytics or tracking, and sends nothing anywhere.</strong></p>
+            <p>Screenshot Studio Pro is a Mac app for designing App Store screenshots. Your work stays on your Mac. <strong>We collect no personal information, and the app contains no analytics or tracking.</strong> The app contacts Apple only for the things described under Network Access below — subscriptions, and uploads you start yourself.</p>
 
             <h2>1. Information We Collect</h2>
             <p>None. The app has no accounts, no sign-in, no analytics, no crash reporting, and no advertising. We receive no information about you or how you use the app. We cannot see your screenshots, your projects, or your text.</p>
@@ -27,22 +27,30 @@
                 <li><strong>Your working project.</strong> Your screenshots, text, and design settings are saved automatically to the app's private container inside your Mac's Application Support folder.</li>
                 <li><strong>Project files you save.</strong> "Save Project…" writes a single file to the location you choose. It contains your designs and the images they use.</li>
                 <li><strong>Exports.</strong> Exported screenshots, translation CSV files, and promo videos are written only to the folder you pick.</li>
+                <li><strong>Snapshots.</strong> The app keeps dated safety copies of your project in the same private container, so you can roll back. They stay on your Mac.</li>
                 <li><strong>Preferences.</strong> Your settings — such as default export format and the export folder you selected — are stored in the standard macOS preferences for this app.</li>
+                <li><strong>App Store Connect API key.</strong> If you choose to add one, its private key is stored in your Mac's Keychain, and its issuer ID and key ID in the app's preferences. They are used only to sign requests to Apple and are never written into projects or exports.</li>
             </ul>
             <p>The app only reads files you explicitly choose through an open dialog or drag onto the window. It does not scan your disk, and it does not use the Photos library.</p>
 
             <h2>3. Network Access</h2>
-            <p>The app makes no network connections. It does not check for updates, phone home, or contact any server.</p>
-            <p>The only exception is entirely under your control: the Help menu and the welcome screen contain links to this website. Clicking one opens the page in your own web browser. At that point your browser — not the app — is making the request, and it is subject to your browser's privacy settings and to GitHub Pages, where these pages are hosted.</p>
+            <p>The app never contacts us or any server of ours — we don't run one. It does not check for updates or report usage. It connects to Apple in these cases only:</p>
+            <ul>
+                <li><strong>Subscriptions.</strong> Plans, purchases, and restoring a purchase go through Apple's App Store. Apple handles the payment; we never see your payment details or your Apple Account.</li>
+                <li><strong>Uploading to App Store Connect.</strong> Only if you add your own App Store Connect API key and choose "Upload to App Store Connect", the app sends the screenshots and listing text you chose to upload, together with your app's bundle ID, directly to Apple's App Store Connect service. Nothing is uploaded unless you start it.</li>
+                <li><strong>Translation.</strong> "Translate" uses Apple's on-device translation built into macOS. Your text is translated on your Mac; macOS may download a language pack from Apple the first time a language is used.</li>
+            </ul>
+            <p>What you send to Apple this way is covered by Apple's own privacy policy.</p>
+            <p>The Help menu, the settings, and the welcome screen also contain links to this website and to Apple. Clicking one opens the page in your own web browser. At that point your browser — not the app — is making the request, and it is subject to your browser's privacy settings and to GitHub Pages, where these pages are hosted.</p>
 
             <h2>4. Third-Party Services</h2>
-            <p>There are none. The app bundles no third-party SDKs, and no data is shared with anyone, because no data is collected in the first place.</p>
+            <p>Apart from Apple's services described above, there are none. The app includes a few open-source components (for animations, vector images, ZIP archives, and keyboard shortcuts) that run entirely on your Mac; none of them collects or transmits anything. No data is shared with anyone, because we collect none in the first place.</p>
 
             <h2>5. Children's Privacy</h2>
             <p>The app collects no information from anyone, including children under 13.</p>
 
             <h2>6. Data Deletion</h2>
-            <p>Because nothing is stored off your Mac, there is nothing for us to delete. Removing the app and its container from your Mac removes everything it saved.</p>
+            <p>We hold none of your data, so there is nothing for us to delete. Removing the app and its container from your Mac removes everything it saved; a stored API key can be removed in the app's settings or in Keychain Access. Anything you uploaded to App Store Connect lives in your own Apple developer account and is managed there.</p>
 
             <h2>7. Changes to This Privacy Policy</h2>
             <p>If this policy changes, the new version will be posted on this page with an updated "Last updated" date. If a future version of the app ever adds a feature that transmits data, this policy will be updated before that version ships.</p>
