@@ -21,7 +21,7 @@
             <p>Designing is free; getting your work out of the app is Pro. There is no free export &mdash; but nothing you design is ever locked.</p>
             <ul>
                 <li><strong>Free, with no time limit:</strong> unlimited screens, every template, device frame and background, headlines and badges, localizing texts and previewing languages, preflight checks, and saving, opening and snapshotting projects.</li>
-                <li><strong>Pro:</strong> exporting screenshots (PNG or JPEG at exact App Store sizes), exporting every language and device in one run, ZIP and fastlane bundles, listing text files, the overview image and promo video, copying finished renders to the clipboard, and uploading to App Store Connect.</li>
+                <li><strong>Pro:</strong> exporting screenshots (PNG or JPEG at exact App Store sizes), exporting every language and device in one run, ZIP archives and the App Store delivery bundle, listing text files, the overview image and promo video, and copying finished renders to the clipboard.</li>
             </ul>
             <p>There are two ways to get Pro:</p>
             <ul>
@@ -35,14 +35,14 @@
                 <li><strong>Add your captures.</strong> Drag screenshots onto the canvas, or use Add Screenshot. Dropping several at once creates one screen per image and picks the matching device automatically.</li>
                 <li><strong>Pick a look.</strong> Choose a template or gradient in the inspector, then adjust the background, headline, and device placement. "Match Colors to Screenshot" pulls a palette out of your own artwork.</li>
                 <li><strong>Check before you upload.</strong> The preflight button flags low text contrast, headlines that are too long, screens with no image, and sets that exceed Apple's ten-screenshot limit.</li>
-                <li><strong>Export (Pro).</strong> Choose Folders or fastlane layout, then Export All. Files are named and sized for direct upload. Exporting needs Pro &mdash; a monthly or yearly subscription; see Free vs Pro above.</li>
+                <li><strong>Export (Pro).</strong> Choose the Folders or App Store layout, then Export All. Files are named and sized for direct upload. Exporting needs Pro &mdash; a monthly or yearly subscription; see Free vs Pro above.</li>
             </ul>
 
             <h2>Troubleshooting</h2>
             <ul>
                 <li><strong>Export fails, or the default folder stops working.</strong> macOS grants the app access to the folder you pick. If the folder was moved, renamed, deleted, or lives on a drive that is no longer connected, that access no longer resolves and the app will ask you to choose a folder again. To set a new default, open Settings → Defaults &amp; Files → Export Destination Folder.</li>
                 <li><strong>My screenshot looks cropped or stretched inside the frame.</strong> The capture's shape does not match the device you selected. Either switch the device in the inspector, or use the screenshot zoom and offset controls to reframe it inside the screen. Preflight warns when a capture is more than 12% away from the device's aspect ratio.</li>
-                <li><strong>Where did my exported dark-mode images go?</strong> Dark variants are only exported for screens that actually have a dark screenshot assigned. In Folders layout they go into <code>Light</code> and <code>Dark</code> subfolders. In fastlane layout they stay in the locale folder with a <code>_dark</code> suffix, so the structure stays valid for <code>fastlane deliver</code>.</li>
+                <li><strong>Where did my exported dark-mode images go?</strong> Dark variants are only exported for screens that actually have a dark screenshot assigned. In Folders layout they go into <code>Light</code> and <code>Dark</code> subfolders. The App Store layout leaves them out, because App Store Connect has no slot for dark screenshots and they would be uploaded as extra ones.</li>
                 <li><strong>Translations.</strong> "Copy Base Texts Into…" fills empty fields with your base-language wording so you can see the layout — it does not translate. For real translations, use Export Texts for Translation… to get a CSV, have it translated, then Import Translated Texts…. You can also import an Xcode String Catalog.</li>
                 <li><strong>Moving a project to another Mac.</strong> Use Save Project…. The saved file embeds every image the project uses, so it opens complete on the other machine. Opening a project replaces whatever you currently have open, so save first if you want to keep it.</li>
                 <li><strong>Undo.</strong> Command-Z steps back through your design changes. The app also saves your work automatically every few seconds.</li>
